@@ -49,7 +49,7 @@ No single model is "correct" — each answers a different question and has a bui
 | **Linear** | Every touch gets equal credit | Dilutes the channels that matter most; treats a single email open the same as a demo attendance |
 | **Time-decay** | Recent touches matter more | Systematically underweights the awareness-stage channels that started the journey |
 | **U-shaped** (first + last touch weighted, middle touches split the rest — commonly 40/20/40) | Balances "what created this" with "what closed this," while still crediting the middle | Ignores which middle touches actually mattered vs. noise |
-| **W-shaped** (first touch, lead-creation touch, opportunity-creation touch each weighted, typically ~30/30/30 with 10% to the rest) | Same as U-shaped, plus explicitly credits the moment a lead converts to a qualified opportunity | Needs clean, consistent stage-change tracking to work — garbage in if your CRM stages are inconsistent |
+| **W-shaped** (credit split across the three key touches — first touch, lead-creation touch, opportunity-creation touch — with roughly even weight, and a small remainder distributed across the rest) | Same as U-shaped, plus explicitly credits the moment a lead converts to a qualified opportunity | Needs clean, consistent stage-change tracking to work — garbage in if your CRM stages are inconsistent |
 
 **Recommendation**: don't start with multi-touch. Start with a **dual first-touch + last-touch view** side by side — it's simple to build, explainable to a room of non-marketers, and already surfaces the inbound/outbound tension above. Move to U-shaped or W-shaped only once you have enough clean touch-point data (consistent UTMs, consistent CRM stage timestamps) that the extra model complexity adds signal instead of just adding a number nobody trusts.
 
@@ -81,4 +81,4 @@ The caution that matters more than any of the formulas: **ROI comparisons across
 - **CRM properties to hold, at minimum**: `original_source` (first touch, locked), `original_source_detail` (campaign/content-level detail), `most_recent_source` (last touch, updatable), `self_reported_source` (from the form field above), and a boolean or enum for `inbound_or_outbound` classification set at deal creation and reviewed, not auto-derived blindly from source alone.
 
 ## Related skills
-Part of RevOS. See also [revops-dashboards](../revops-dashboards/SKILL.md) for reporting channel ROI alongside pipeline metrics, [lifecycle-stages](../lifecycle-stages/SKILL.md) for how sourced pipeline maps to MQL/SQL definitions, and the `revops` router.
+Part of RevOS. See also the other capability skills and the `revops` router.
