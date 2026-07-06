@@ -1,0 +1,10 @@
+{
+  "name": "revops-os",
+  "version": "0.1.0",
+  "description": "Ryzo's RevOps operating system — 16 skills across lifecycle, scoring, routing, pipeline, automation, attribution, forecasting, and a 5-stage delivery workflow.",
+  "author": { "name": "Ryzo", "url": "https://ryzo.nl" },
+  "homepage": "https://github.com/vibehackerman/revops-os",
+  "repository": "https://github.com/vibehackerman/revops-os",
+  "license": "MIT",
+  "keywords": ["revops", "revenue-operations", "crm", "lead-scoring", "attribution", "forecasting", "pipeline", "gtm"]
+}

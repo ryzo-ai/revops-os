@@ -1,0 +1,38 @@
+# Ryzo gitleaks config — keeps ALL default rules, allowlists only proven false positives.
+# A real credential (e.g. a literal `xoxb-<realvalue>`) still trips the scan; only
+# placeholder/env-var examples and non-source binaries are exempted.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Ryzo false-positive allowlist (doc placeholders, env-var refs, pagination cursors, binaries)"
+
+# stopwords: ignore a finding if its secret contains any of these literal strings
+stopwords = [
+  "dev_local_token",
+  "dev-local-token",
+  "your_secret",
+]
+
+# regexes match the captured secret (un-anchored — matches the placeholder wherever
+# it appears). Placeholder / env-var token shapes seen in curl examples in plan docs.
+regexes = [
+  '''dev[_-]local[_-]token''',
+  '''<[A-Za-z0-9_]+(_[0-9]+)?>''',
+  '''\$\{?[A-Za-z_][A-Za-z0-9_]*\}?''',
+  '''YOUR_[A-Z_]+''',
+  '''_next_?[Pp]age_?[Tt]oken''',
+]
+
+# paths: non-source data artifacts are not scanned for secrets (data, not code)
+paths = [
+  '''.*\.pdf$''',
+  '''.*\.zip$''',
+  '''.*\.xlsx$''',
+  '''.*\.png$''',
+  '''.*\.jpe?g$''',
+  # scraped competitor ad-intel JSON — contains high-entropy Google Ads pagination
+  # cursors (_next_page_token) & ad IDs that trip generic-api-key. No Ryzo secrets here.
+  '''.*ad-intel/.*\.json$''',
+]
