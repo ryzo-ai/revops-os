@@ -1,6 +1,6 @@
 ---
 name: revops
-description: "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' 'deal desk,' 'CRM automation,' 'marketing-to-sales handoff,' or 'data hygiene.' For cold outreach emails, see cold-email. For email drip campaigns, see email-sequence. For pricing decisions, see pricing-strategy."
+description: "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' 'deal desk,' 'CRM automation,' 'marketing-to-sales handoff,' or 'data hygiene.'"
 metadata:
   version: 1.1.0
 ---
@@ -87,26 +87,12 @@ Format each as a standalone document the user can implement directly. Include pl
 
 ## Tool Integrations
 
-For implementation, see the [tools registry](../../tools/REGISTRY.md). Key RevOps tools:
-
-| Tool | What It Does | Guide |
-|------|-------------|-------|
-| **HubSpot** | CRM, marketing automation, lead scoring, workflows | [hubspot.md](../../tools/integrations/hubspot.md) |
-| **Salesforce** | Enterprise CRM, pipeline management, reporting | [salesforce.md](../../tools/integrations/salesforce.md) |
-| **Calendly** | Meeting scheduling, round-robin routing | [calendly.md](../../tools/integrations/calendly.md) |
-| **SavvyCal** | Scheduling with priority-based availability | [savvycal.md](../../tools/integrations/savvycal.md) |
-| **Clearbit** | Real-time lead enrichment and scoring | [clearbit.md](../../tools/integrations/clearbit.md) |
-| **Apollo** | Contact data, enrichment, and outbound sequences | [apollo.md](../../tools/integrations/apollo.md) |
-| **ActiveCampaign** | Marketing automation for SMBs, lead scoring | [activecampaign.md](../../tools/integrations/activecampaign.md) |
-| **Zapier** | Cross-tool automation and workflow glue | [zapier.md](../../tools/integrations/zapier.md) |
+RevOps implementations typically touch tools across these categories: CRM (HubSpot, Salesforce), scheduling (Calendly, SavvyCal), enrichment (Clearbit, Apollo), marketing automation (ActiveCampaign), and iPaaS (Zapier).
 
 ---
 
 ## Related Skills
 
-- **cold-email**: For outbound prospecting emails
-- **email-sequence**: For lifecycle and nurture email flows
-- **pricing-strategy**: For pricing decisions and packaging
-- **analytics-tracking**: For tracking pipeline metrics and attribution
-- **launch-strategy**: For go-to-market launch planning
-- **sales-enablement**: For sales collateral, decks, and objection handling
+RevOps ships as three layers in this plugin:
+- **Capability skills (10):** lifecycle-stages, lead-scoring, lead-routing, pipeline-management, crm-automation, deal-desk, data-hygiene, revops-dashboards, attribution, forecasting
+- **Delivery workflow (5):** revops-audit → revops-blueprint → revops-implement → revops-optimize → revops-coach

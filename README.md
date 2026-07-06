@@ -14,7 +14,7 @@
 [![Skills](https://img.shields.io/badge/skills-16-E0621A)](#skills)
 [![License: MIT](https://img.shields.io/badge/license-MIT-3DA639)](LICENSE)
 
-Sixteen skills spanning the full RevOps surface — lifecycle, scoring, routing, pipeline, automation, hygiene, dashboards, attribution, forecasting — plus a 5-stage delivery workflow that takes a CRM from audit to a coached, self-sufficient team.
+Sixteen skills spanning the full RevOps surface — lifecycle, scoring, routing, pipeline, automation, hygiene, dashboards, attribution, forecasting — plus a 5-skill delivery workflow (6 stages; implement covers 3–4) that takes a CRM from audit to a coached, self-sufficient team.
 
 ## Install
 
@@ -48,7 +48,7 @@ Three layers, sixteen skills:
 
 - **Router (1):** **revops** — entry point that routes a RevOps ask to the right capability skill.
 - **Capability (10):** **lifecycle-stages**, **lead-scoring**, **lead-routing**, **pipeline-management**, **crm-automation**, **deal-desk**, **data-hygiene**, **revops-dashboards**, **attribution**, **forecasting** — the building blocks of a RevOps system, each usable standalone.
-- **Delivery (5):** **revops-audit** → **revops-blueprint** → **revops-implement** → **revops-optimize** → **revops-coach** — Ryzo's own 6-stage service methodology (implement covers stages 3–4), from assessment through hands-off enablement.
+- **Delivery (5):** **revops-audit** → **revops-blueprint** → **revops-implement** → **revops-optimize** → **revops-coach** — Ryzo's own 5-skill delivery workflow (6 stages; implement covers 3–4), from assessment through hands-off enablement.
 
 ## Prerequisites
 
