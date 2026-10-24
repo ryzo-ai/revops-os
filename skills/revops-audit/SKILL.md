@@ -9,7 +9,7 @@ You are auditing a client's CRM and revenue operations system. The audit is syst
 
 ## Before Starting
 
-1. **Load client profile** from vault: `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/ryzo-vault/01-clients/[slug]/[slug].md`
+1. **Load client profile** from the client folder: `~/code/projects/ryzo/ops/service/clients/[slug]/CLAUDE.md`
 2. **Confirm CRM platform** — HubSpot, Attio, Salesforce, or other
 3. **Gather context:**
    - GTM motion (PLG, sales-led, hybrid)
