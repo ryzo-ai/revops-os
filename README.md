@@ -20,13 +20,13 @@ Sixteen skills spanning the full RevOps surface — lifecycle, scoring, routing,
 
 **As a plugin (recommended):**
 ```
-/plugin marketplace add initforthevibe/ryzo
+/plugin marketplace add ryzo-ai/ryzo
 /plugin install revops-os@ryzo
 ```
 
 **As plain skills (copy-in):**
 ```
-git clone https://github.com/initforthevibe/revops-os
+git clone https://github.com/ryzo-ai/revops-os
 cp -r revops-os/skills/* ~/.claude/skills/
 ```
 
